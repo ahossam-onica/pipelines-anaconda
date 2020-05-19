@@ -75,4 +75,9 @@ jobs:
       pytest
     displayName: pytest
   
+  - task: Docker@2
+    inputs:
+      command: 'build'
+      Dockerfile: '**/Dockerfile'
+  
   
